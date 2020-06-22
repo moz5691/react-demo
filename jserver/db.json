@@ -1,0 +1,220 @@
+{
+  "switches": [{
+      "id": 1,
+      "name": "GESwitch-0001",
+      "description": "GE port 1",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 2,
+      "name": "GESwitch-0002",
+      "description": "GE port 2",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 3,
+      "name": "GESwitch-0003",
+      "description": "GE port 3",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 4,
+      "name": "GESwitch-0004",
+      "description": "GE port 4",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 5,
+      "name": "GESwitch-0005",
+      "description": "GE port 5",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 6,
+      "name": "GESwitch-0006",
+      "description": "GE port 6",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 7,
+      "name": "GESwitch-0007",
+      "description": "GE port 7",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 8,
+      "name": "GESwitch-0008",
+      "description": "GE port 8",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 9,
+      "name": "GESwitch-0009",
+      "description": "GE port 9",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 10,
+      "name": "GESwitch-0010",
+      "description": "GE port 10",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 11,
+      "name": "GESwitch-0011",
+      "description": "GE port 11",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 12,
+      "name": "GESwitch-0012",
+      "description": "GE port 12",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 13,
+      "name": "GESwitch-0013",
+      "description": "GE port 13",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 14,
+      "name": "GESwitch-0014",
+      "description": "GE port 14",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 15,
+      "name": "GESwitch-0015",
+      "description": "GE port 15",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 16,
+      "name": "GESwitch-0016",
+      "description": "GE port 16",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 17,
+      "name": "GESwitch-0017",
+      "description": "GE port 17",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 18,
+      "name": "GESwitch-0018",
+      "description": "GE port 18",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 19,
+      "name": "GESwitch-0019",
+      "description": "GE port 19",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 20,
+      "name": "GESwitch-0020",
+      "description": "GE port 20",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 21,
+      "name": "GESwitch-0021",
+      "description": "GE port 21",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 22,
+      "name": "GESwitch-0022",
+      "description": "GE port 22",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 23,
+      "name": "GESwitch-0023",
+      "description": "GE port 23",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    },
+    {
+      "id": 24,
+      "name": "GESwitch-0024",
+      "description": "GE port 24",
+      "portType": "Access",
+      "enabled": true,
+      "link": "Auto neg",
+      "imagePath": "assets/img/tl-sg1024d-tp-link-gigabit-switch.jpg"
+    }
+
+  ]
+}

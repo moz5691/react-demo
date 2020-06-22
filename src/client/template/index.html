@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="data:,">
+</head>
+
+<body>
+  <div>
+    <a href="/login"><button>
+        Login with KeyCloak
+      </button></a>
+    <a href="/exchangeToken"><button>
+        Exchange Token
+      </button></a>
+    <a href="/logout"><button>
+        Logout with KeyCloak
+      </button></a>
+  </div>
+  <div>
+    <p>Auth code: {{.AuthCode}}</p>
+    <p>Session: {{.SessionState}}</p>
+    <p>Access token: {{.AccessToken}}</p>
+    <p>Refresh Token: {{.RefreshToken}}</p>
+    <p>Scope: {{.Scope}}</p>
+    <p>Expires In: {{.ExpiresIn}}</p>
+  </div>
+
+
+
+</body>
+
+</html>
