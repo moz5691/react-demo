@@ -72,7 +72,6 @@ class Person extends Component {
 export default Person;
 ```
 
-
 - JSX, HTML like syntax. Extends ECMAscript so that it coexists with JS/React code.
 
 ```javascript
@@ -95,10 +94,61 @@ export default Person;
 
 <br/>
 <br/>
+
+### React Hooks. What is and why Hooks?  
+- React Hooks are so welecomed by React community since its release. 
+- A new addition in React 16.8 (current is 16.13.x)
+- Use state and other React features without writing a class
+- (this means functional components for almost all UI rendering.)
+- "useState" and "useEffect" are two most basic Hooks
+- The following shows how "class component" is easily converted into "functional component" with React Hooks.
+
+```javascript
+// Class component - maintain state
+import React, { Component } from "react";
+
+class Person extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      myState: true;
+    }
+  }
+  
+  render() {
+    return (
+      <div>
+        <h1>Hello Person</h1>
+      </div>
+    );
+  }
+}
+export default Person;
+```
+
+```javascript
+// Functional component with Hooks
+import React, { useState } from "react";
+
+const Person = () => {
+
+  const [mystate, setMystate] = useState(true);
+
+  return (
+    <div>
+      <h1>Hello Person</h1>
+    </div>
+  );
+  }
+}
+export default Person;
+```
   
 ## Scafolding, building, deploying
 
-### If you use CRA, CRA creates standard scafolding for React project.  If you don't use CRA, folder structure is totally up to you (choose whatever you think it is the best.)
+### If you use CRA, CRA creates standard scafolding for React project.  
+
+### If you don't use CRA, folder structure is totally up to you (choose whatever you think it is the best.)
 
 
 ### With Webpack
@@ -109,6 +159,7 @@ export default Person;
 - Brief intro how build works with webpack. (Concept of build process the same with CRA. )
 
     Let's say we have two javascript files and index.html
+
 ```javascript
 // src/index.js <-- main entry javascript file.
 import bar from './bar';
@@ -178,54 +229,20 @@ $ npx create-react-app helloworld
   },
 ```
 
-### React Hooks. What is and why Hooks?  
-- React Hooks are so welecomed by React community since its release. 
-- A new addition in React 16.8 (current is 16.13.x)
-- Use state and other React features without writing a class
-- (this means functional components for almost all UI rendering.)
-- "useState" and "useEffect" are two most basic Hooks
-- The following shows how "class component" is easily converted into "functional component" with React Hooks.
 
-```javascript
-// Class component - maintain state
-import React, { Component } from "react";
+## Testing (including API mocker)
+* React comes with Jest test lib (similar to Jasmine, Mocha)
+https://jestjs.io/docs/en/tutorial-react
+* API mocker libs
+* UI integration testing, Cypress is modern and is relatively easy, advanced and less overhead compared to Selenium. 
+https://www.cypress.io/ 
 
-class Person extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      myState: true;
-    }
-  }
-  
-  render() {
-    return (
-      <div>
-        <h1>Hello Person</h1>
-      </div>
-    );
-  }
-}
-export default Person;
-```
+## CSS Framework
+* Material UI (https://material-ui.com) <- Most active 
+* Bootstrap (https://react-bootstrap.github.io)
+* Ant Design (https://ant.design) <-- Alibaba
+* Semantic UI (https://react.semantic-ui.com)
 
-```javascript
-// Functional component with Hooks
-import React, { useState } from "react";
-
-const Person = () => {
-
-  const [mystate, setMystate] = useState(true);
-
-  return (
-    <div>
-      <h1>Hello Person</h1>
-    </div>
-  );
-  }
-}
-export default Person;
-```
 
 ## SPA (Single Page App) vs MPA (Multi Page App)
 * Multi Page App utilizes 'react-router-dom' 
@@ -233,11 +250,6 @@ export default Person;
 * "react router" is the most popular library for router to implement MPA.
 https://reacttraining.com/react-router/web/guides/quick-start
 
-## CSS Framework
-* Material UI (https://material-ui.com) <- Most active 
-* Bootstrap (https://react-bootstrap.github.io)
-* Ant Design (https://ant.design) <-- Alibaba
-* Semantic UI (https://react.semantic-ui.com)
 
 ## Dockerize
 * Multi-stage (mostly two stages) build is common to reduce build time.
@@ -292,13 +304,6 @@ https://reacttraining.com/react-router/web/guides/quick-start
 
     }
 ```
-
-## Testing (including API mocker)
-* React comes with Jest test lib (similar to Jasmine, Mocha)
-https://jestjs.io/docs/en/tutorial-react
-* API mocker libs
-* UI integration testing, Cypress is modern and is relatively easy, advanced and less overhead compared to Selenium. 
-https://www.cypress.io/ 
 
 ## Webserver
 
