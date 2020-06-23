@@ -1,6 +1,6 @@
 # React and development environment 
-#### React, Angular, Vue are the most popular Web framework.
-#### Angular and React are two clear leaders in Frontend framework in terms of their market share.
+#### React, Angular, Vue are the most popular Web frameworks.
+#### Angular and React are two clear leaders in web UI framework in terms of the market share.
 
 ## Angular
 - Steep learning curve
@@ -68,7 +68,7 @@ class Person extends Component {
 export default Person;
 ```
 
-- JSX, HTML like syntax. Extends ECMAscript so that it coexists with JS/React code.
+- JSX (JavsScript XML), HTML like syntax. Extends ECMAscript so that it coexists with JS/React code.
 
 ```javascript
   return (
@@ -335,6 +335,7 @@ https://www.nginx.org
 I React Hooks
 * API calls to JSON server
 * DOM update
+* OIDC demo with Keycloak (TBD)
 
 
 
