@@ -97,29 +97,94 @@ export default Person;
 <br/>
   
 ## Scafolding, building, deploying
-### Webpack
+
+### If you use CRA, CRA creates standard scafolding for React project.  If you don't use CRA, folder structure is totally up to you (choose whatever you think it is the best.)
+
+
+### With Webpack
 - https://webpack.js.org
 - General purpose builder
 - Flexible and detail customization
 - Fit for big and highly customized project
+- Brief intro how build works with webpack. (Concept of build process the same with CRA. )
 
-### CRA (create-react-app)
+    Let's say we have two javascript files and index.html
+```javascript
+// src/index.js <-- main entry javascript file.
+import bar from './bar';
+foo();
+bar();
+
+// src/foo.js
+export default function foo() {
+  console.log('foo');
+}
+// src/bar.js
+export default function bar() {
+  console.log('bar');
+}
+```
+
+- 'index.html' file sources 'dist/bundle.js' which has not been created. It is webpack's job to create 'dist/bundle.js' from all javascript files entering through 'index.js' in this case. 
+
+```html
+<!doctype html>
+<html>
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
+```
+- Webpack takes a place to build 'bundle.js' from multiple javascript files.  The following is very brief 'webpack.config.js'
+
+```javascript
+// webpack.config.js
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  }
+};
+```
+- Webpack does similar jobs for css(or sass), image files(png, jpg) and even support middleware for testing.  
+
+
+### With CRA (create-react-app)
 - https://github.com/facebook/create-react-app
 - CRA creates React boilerplate including test harness
-- CRA create default webpack (but not customizable)
-- We can start a new projet within minutes
-- Fit for any project not requiring webpack customization
 
 ```javascript
 # after install npm
 $ npx create-react-app helloworld
 ```
+- CRA create default webpack (but not customizable)
+- We can start a new projet within minutes
+- Fit for any project not requiring webpack customization
+- CRA creates 'package.json'.  There are basic commands to use for running development server ("start"), building production image ("build"), running Jest test ("test"), and eject CRA ("eject").
+
+```json
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+```
 
 ### React Hooks. What is and why Hooks?  
+- React Hooks are so welecomed by React community since its release. 
 - A new addition in React 16.8 (current is 16.13.x)
 - Use state and other React features without writing a class
 - (this means functional components for almost all UI rendering.)
 - "useState" and "useEffect" are two most basic Hooks
+- The following shows how "class component" is easily converted into "functional component" with React Hooks.
 
 ```javascript
 // Class component - maintain state
@@ -165,16 +230,17 @@ export default Person;
 ## SPA (Single Page App) vs MPA (Multi Page App)
 * Multi Page App utilizes 'react-router-dom' 
 * SPA for a very small appliation, but most of our application should need to be MPA.
+* "react router" is the most popular library for router to implement MPA.
+https://reacttraining.com/react-router/web/guides/quick-start
 
 ## CSS Framework
-* Material UI <- Most active 
-* Bootstrap 
-* Ant Design 
-* Semantic UI 
-* Blueprint
+* Material UI (https://material-ui.com) <- Most active 
+* Bootstrap (https://react-bootstrap.github.io)
+* Ant Design (https://ant.design) <-- Alibaba
+* Semantic UI (https://react.semantic-ui.com)
 
 ## Dockerize
-* Multi-stage (mostly two stages) build is common
+* Multi-stage (mostly two stages) build is common to reduce build time.
 * Create build-stage for build image 
 * Cache build image
 * Create docker with Nginx
@@ -229,8 +295,10 @@ export default Person;
 
 ## Testing (including API mocker)
 * React comes with Jest test lib (similar to Jasmine, Mocha)
+https://jestjs.io/docs/en/tutorial-react
 * API mocker libs
-* UI integration testing, Cypress is modern and is relatively easy, advanced and less overhead compared to Selenium. https://www.cypress.io/ 
+* UI integration testing, Cypress is modern and is relatively easy, advanced and less overhead compared to Selenium. 
+https://www.cypress.io/ 
 
 ## Webserver
 
