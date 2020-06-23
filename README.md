@@ -1,10 +1,6 @@
-# Angular vs React 
-### We are down to two choices or three if including Vue.js.
-### Angular and React are leaders in Frontend framework.
-
----
-<br/>
-<br/>
+# React and development environment 
+#### React, Angular, Vue are the most popular Web framework.
+#### Angular and React are two clear leaders in Frontend framework in terms of their market share.
 
 ## Angular
 - Steep learning curve
@@ -12,7 +8,7 @@
 - Must follow exact rules and patterns witin it.
 - TypeScript
 - Google
-<br/>
+
 
 ## React
 - Not a complete framework, but JS libraries
