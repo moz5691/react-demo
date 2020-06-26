@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Switches from './components/Switches';
 import SelectSwitch from './components/SelectSwitch';
 
 function App() {
 
-  const title = 'GE swtich stuff';
+  // const title = 'GE swtich stuff';
 
-  return (
-    <div >
-      <Header title={title} />
-      <Switches />
-      <SelectSwitch />
-    </div>
+  const [title, setTitle] = useState('GE Company')
+
+  return (<div >
+    <Header title={title}
+      setTitle={setTitle} /> <Switches />
+    <SelectSwitch />
+  </div>
   );
 }
 
