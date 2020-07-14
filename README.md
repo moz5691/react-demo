@@ -171,57 +171,6 @@ export default Person;
 ## Scafolding, building, deploying
 
 
-### React Router
-- Traditional (Server sided rendering) vs SPA life cycle.
-![](img/spa_life_cycle.png)
-- Navigational components
-- Server side HTML rendering can be done via multiple different ways. 
-  * Flask with Jinja template   
-  * ExpressJS with HTML template (such as with Handlebar.js https://handlebarsjs.com)
-  * Server functionalities (API endpoints, DB ORM) can be integrated within the same server for small scale server application.
-  * SPA (Single Page Application) or MPA (Multi Page Application)
-- React Router is frontend side rendering
-  * React-Router is declarative.  
-  * Router tells which part of application(DOMs) can be displayed.  It is stll SPA but acts like MPA.
-  * Routing and rendering is strictly within frontend not being dictated by server side (React also support server side rendering but it is out of scope here.)
-  * The backend server is completely out of scope of React-Router.  
-
-### React Router basic components (partial)
-- ```<BrowserRouter></BrowserRouter>``` 
-  To keep UI in sync with the URL
-- ```<Link></Link>```
-  Declarative navigation 
-- ```<Route></Route>```
-  Key component, render matching UI when the path matches the current URL 
-- ```<Switch></Switch>```
-
-```javascript
-    <BrowserRouter>
-      // navigation bar
-      <ul>
-        <li> <Link to="/">Home</Link>               </li>
-        <li> <Link to="/about">About</Link>         </li>
-        <li> <Link to="/dashboard">DashBoard</Link> </li>
-      </ul>
-
-      // path and routing component 
-      <Switch>
-        <Route exact path='/'> <Home /> </Route>
-        <Route path='/about'> <About /> </Route>
-        <Route path='/dashboard'> <DashBoard /> </Route>
-        <Route path='/device/:id'> <Device /> </Route>
-      </Switch>
-
-    </BrowserRouter>
-
-```
-
-### React Router hooks (partial)
-- useParams()
-  * Returns key/value pairs of URL parameters
-- useHistory()
-  * Access to `history` instance to navigate
-
 
 
 ### With Webpack
@@ -301,6 +250,65 @@ $ npx create-react-app helloworld
     "eject": "react-scripts eject"
   },
 ```
+
+## React Router
+### React Router Intro
+- Traditional (Server sided rendering) vs SPA life cycle.
+![](img/spa_life_cycle.png)
+- Navigational components
+- Server side HTML rendering can be done via multiple different ways. 
+  * Flask with Jinja template   
+  * ExpressJS with HTML template (such as with Handlebar.js https://handlebarsjs.com)
+  * Server functionalities (API endpoints, DB ORM) can be integrated within the same server for small scale server application.
+  * SPA (Single Page Application) or MPA (Multi Page Application)
+- React Router is frontend side rendering
+  * React-Router is declarative.  
+  * Router tells which part of application(DOMs) can be displayed.  It is stll SPA but acts like MPA.
+  * Routing and rendering is strictly within frontend not being dictated by server side (React also support server side rendering but it is out of scope here.)
+  * The backend server is completely out of scope of React-Router.  
+
+### React Router basic components (partial)
+- ```<BrowserRouter></BrowserRouter>``` 
+  * To keep UI in sync with the URL
+- ```<Link></Link>```
+  * Declarative navigation 
+- ```<Route></Route>```
+  * Key component, render matching UI when the path matches the current URL 
+- ```<Switch></Switch>```
+  * Renders the first route that matches/includes the path
+  https://medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e
+
+```javascript
+    <BrowserRouter>
+      // navigation bar
+      <ul>
+        <li> <Link to="/">Home</Link>               </li>
+        <li> <Link to="/about">About</Link>         </li>
+        <li> <Link to="/dashboard">DashBoard</Link> </li>
+      </ul>
+
+      // path and routing component 
+      <Switch>
+        <Route exact path='/'> <Home /> </Route>
+        <Route path='/about'> <About /> </Route>
+        <Route path='/dashboard'> <DashBoard /> </Route>
+        <Route path='/device/:id'> <Device /> </Route>
+      </Switch>
+
+    </BrowserRouter>
+
+```
+
+### React Router hooks (partial)
+- useParams()
+  * Returns key/value pairs of URL parameters
+- useHistory()
+  * Access to `history` instance to navigate
+
+### Demo 
+- Breif demo to show how simple routing works. 
+
+![](img/react_routing_demo.png)
 
 
 ## Testing (including API mocker)
