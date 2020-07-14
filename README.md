@@ -172,15 +172,17 @@ export default Person;
 
 
 ### React Router
+- Traditional (Server sided rendering) vs SPA life cycle.
+![](img/spa_life_cycle.png)
 - Navigational components
 - Server side HTML rendering can be done via multiple different ways. 
   * Flask with Jinja template   
-  * ExpressJS with HTML template (such as with Handlebar)
-  * Server functionalitis (API endpoint, DB ORM) can be integrated within the same server for small scale server application.
+  * ExpressJS with HTML template (such as with Handlebar.js https://handlebarsjs.com)
+  * Server functionalities (API endpoints, DB ORM) can be integrated within the same server for small scale server application.
   * SPA (Single Page Application) or MPA (Multi Page Application)
 - React Router is frontend side rendering
   * React-Router is declarative.  
-  * Router tells which part of application(DOMs) can be displayed.  SPA but it looks like MPA.
+  * Router tells which part of application(DOMs) can be displayed.  It is stll SPA but acts like MPA.
   * Routing and rendering is strictly within frontend not being dictated by server side (React also support server side rendering but it is out of scope here.)
   * The backend server is completely out of scope of React-Router.  
 
