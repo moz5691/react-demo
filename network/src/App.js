@@ -5,16 +5,27 @@ import SelectSwitch from './components/SelectSwitch';
 
 function App() {
 
-  // const title = 'GE swtich stuff';
+  // const title = 'GE swtich stuff !!!!!';
+
+  const subtitle = "this is sub title."
 
   const [title, setTitle] = useState('GE Company')
 
-  return (<div >
-    <Header title={title}
-      setTitle={setTitle} /> <Switches />
-    <SelectSwitch />
-  </div>
+
+  const styleHeader = { color: "red" };
+
+  return (
+    <div >
+      <Header title={title} subtitle={subtitle} style={styleHeader}
+        setTitle={setTitle}
+      />
+      <Switches />
+      <SelectSwitch />
+    </div>
   );
 }
 
 export default App;
+
+{/* <Header title={title}
+      setTitle={setTitle} style={style} />  */}

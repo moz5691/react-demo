@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>README</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">React and development environment</h1>
+
+<h4 id="toc_1">React, Angular, Vue are the most popular Web frameworks.</h4>
+
+<h4 id="toc_2">Angular and React are two clear leaders in web UI framework in terms of the market share.</h4>
+
+<h2 id="toc_3">Angular</h2>
+
+<ul>
+<li>Steep learning curve</li>
+<li>Complete framework</li>
+<li>Must follow exact rules and patterns witin it.</li>
+<li>TypeScript</li>
+<li>Google</li>
+</ul>
+
+<h2 id="toc_4">React</h2>
+
+<ul>
+<li>Not a complete framework, but JS libraries</li>
+<li>Learning curve for the core library isn&#39;t steep</li>
+<li>Need to choose from 3rd party libraries for any outside from the core lib. Learning many different libraries can be challenging.</li>
+<li><p>Facebook</p>
+
+<p>https://2019.stateofjs.com/front-end-frameworks/</p></li>
+<li><p>Interesting survey.  Which one Hates or loves?
+<img src="img/review1.png" alt=""></p></li>
+</ul>
+
+<hr>
+
+<h2 id="toc_5">Concept of React</h2>
+
+<ul>
+<li>React is Declarative</li>
+<li>React effectively render and update view when the data changes. </li>
+<li>Virtual DOM
+<img src="img/virtualdom.png" alt=""></li>
+<li>Components. Breaking down to any small components.<br></li>
+<li>Manage states in Each components.<br></li>
+<li>Class vs functional components. </li>
+</ul>
+
+<div><pre><code class="language-javascript">// Functional component or called dumb component
+import React from &quot;react&quot;;
+
+const Person = props =&gt; (
+  &lt;div&gt;
+    &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;
+  &lt;/div&gt;
+);
+
+export default Person;</code></pre></div>
+
+<div><pre><code class="language-javascript">// Class component - maintain state
+import React, { Component } from &quot;react&quot;;
+
+class Person extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      myState: true;
+    }
+  }
+  
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hello Person&lt;/h1&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default Person;</code></pre></div>
+
+<ul>
+<li>JSX (JavsScript XML), HTML like syntax. Extends ECMAscript so that it coexists with JS/React code.</li>
+</ul>
+
+<div><pre><code class="language-javascript">  return (
+    &lt;div&gt;&lt;h2&gt;{`Name|Description|PortType|Enabled|Link`}&lt;/h2&gt;
+      {switches ?
+        &lt;ul&gt;
+          {switches.map((s,i) =&gt; &lt;li key={i}&gt;
+            {s.name}|
+            {s.description}|{s.portType}|
+            {s.enabled ? &#39;True&#39; : &#39;False&#39;}| 
+            {s.link}&lt;/li&gt;
+          )}
+        &lt;/ul&gt; : null}
+    &lt;/div&gt;
+  )</code></pre></div>
+
+<ul>
+<li>ECMAScript version. ES6 is used in React.  ES6 is ECMAScript 2015 or later.</li>
+</ul>
+
+<p><br/>
+<br/></p>
+
+<h3 id="toc_6">React Hooks. What is and why Hooks?</h3>
+
+<ul>
+<li>React Hooks are so welecomed by React community since its release. </li>
+<li>A new addition in React 16.8 (current is 16.13.x)</li>
+<li>Use state and other React features without writing a class</li>
+<li>(this means functional components for almost all UI rendering.)</li>
+<li>&quot;useState&quot; and &quot;useEffect&quot; are two most basic Hooks</li>
+<li>The following shows how &quot;class component&quot; is easily converted into &quot;functional component&quot; with React Hooks.</li>
+</ul>
+
+<div><pre><code class="language-javascript">// Class component - maintain state
+import React, { Component } from &quot;react&quot;;
+
+class Person extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      myState: true;
+    }
+  }
+  
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hello Person&lt;/h1&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+export default Person;</code></pre></div>
+
+<div><pre><code class="language-javascript">// Functional component with Hooks
+import React, { useState } from &quot;react&quot;;
+
+const Person = () =&gt; {
+
+  const [mystate, setMystate] = useState(true);
+
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Hello Person&lt;/h1&gt;
+    &lt;/div&gt;
+  );
+  }
+}
+export default Person;</code></pre></div>
+
+<ul>
+<li>Pass props to child DOM.<br></li>
+</ul>
+
+<p><img src="img/props_down.png" alt=""></p>
+
+<ul>
+<li>Event bubbling.</li>
+</ul>
+
+<p><img src="img/event_bubble.png" alt=""></p>
+
+<ul>
+<li>Props are from parent node (DOM), child cannot update props.  Only Parent node can update its own props.</li>
+<li>Imagine water flows downward.  Bubbles move upward. 
+
+<ul>
+<li>(1) Child node send event to direct parent node with requesting change props.<br></li>
+<li>(2) Parent node takes event and update props.<br></li>
+<li>(3) Updated props propagates to child DOM. </li>
+</ul></li>
+</ul>
+
+<p><img src="img/event_handle.png" alt=""></p>
+
+<ul>
+<li>This props propagation and event handling is relatively easy for small projects, but it quicly becomes very complicated.<br></li>
+<li>We do have solutions for it.
+
+<ul>
+<li>Redux</li>
+<li>Context Manager</li>
+<li>Reducer and Context Manager with React Hooks </li>
+</ul></li>
+</ul>
+
+<hr>
+
+<h3 id="toc_7">If you use CRA, CRA creates standard scafolding for React project.</h3>
+
+<h3 id="toc_8">If you don&#39;t use CRA, folder structure is totally up to you (choose whatever you think it is the best.)</h3>
+
+<h2 id="toc_9">Scafolding, building, deploying</h2>
+
+<h3 id="toc_10">With Webpack</h3>
+
+<ul>
+<li>https://webpack.js.org</li>
+<li>General purpose builder</li>
+<li>Flexible and detail customization</li>
+<li>Fit for big and highly customized project</li>
+<li><p>Brief intro how build works with webpack. (Concept of build process the same with CRA. )</p>
+
+<p>Let&#39;s say we have two javascript files and index.html</p></li>
+</ul>
+
+<div><pre><code class="language-javascript">// src/index.js &lt;-- main entry javascript file.
+import bar from &#39;./bar&#39;;
+foo();
+bar();
+
+// src/foo.js
+export default function foo() {
+  console.log(&#39;foo&#39;);
+}
+// src/bar.js
+export default function bar() {
+  console.log(&#39;bar&#39;);
+}</code></pre></div>
+
+<ul>
+<li>&#39;index.html&#39; file sources &#39;dist/bundle.js&#39; which has not been created. It is webpack&#39;s job to create &#39;dist/bundle.js&#39; from all javascript files entering through &#39;index.js&#39; in this case. </li>
+</ul>
+
+<div><pre><code class="language-markup">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    ...
+  &lt;/head&gt;
+  &lt;body&gt;
+    ...
+    &lt;script src=&quot;dist/bundle.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+
+<ul>
+<li>Webpack takes a place to build &#39;bundle.js&#39; from multiple javascript files.  The following is very brief &#39;webpack.config.js&#39;</li>
+</ul>
+
+<div><pre><code class="language-javascript">// webpack.config.js
+const path = require(&#39;path&#39;);
+
+module.exports = {
+  entry: &#39;./src/index.js&#39;,
+  output: {
+    path: path.resolve(__dirname, &#39;dist&#39;),
+    filename: &#39;bundle.js&#39;
+  }
+};</code></pre></div>
+
+<ul>
+<li>Webpack does similar jobs for css(or sass), image files(png, jpg) and even support middleware for testing.<br></li>
+</ul>
+
+<h3 id="toc_11">With CRA (create-react-app)</h3>
+
+<ul>
+<li>https://github.com/facebook/create-react-app</li>
+<li>CRA creates React boilerplate including test harness</li>
+</ul>
+
+<div><pre><code class="language-javascript"># after install npm
+$ npx create-react-app helloworld</code></pre></div>
+
+<ul>
+<li>CRA create default webpack (but not customizable)</li>
+<li>We can start a new projet within minutes</li>
+<li>Fit for any project not requiring webpack customization</li>
+<li>CRA creates &#39;package.json&#39;.  There are basic commands to use for running development server (&quot;start&quot;), building production image (&quot;build&quot;), running Jest test (&quot;test&quot;), and eject CRA (&quot;eject&quot;).</li>
+</ul>
+
+<div><pre><code class="language-javascript">  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;react-scripts start&quot;,
+    &quot;build&quot;: &quot;react-scripts build&quot;,
+    &quot;test&quot;: &quot;react-scripts test&quot;,
+    &quot;eject&quot;: &quot;react-scripts eject&quot;
+  },</code></pre></div>
+
+<h2 id="toc_12">Testing (including API mocker)</h2>
+
+<ul>
+<li>React comes with Jest test lib (similar to Jasmine, Mocha)
+https://jestjs.io/docs/en/tutorial-react</li>
+<li>API mocker libs</li>
+<li>UI integration testing, Cypress is modern and is relatively easy, advanced and less overhead compared to Selenium. 
+https://www.cypress.io/ </li>
+</ul>
+
+<h2 id="toc_13">CSS Framework</h2>
+
+<ul>
+<li>Material UI (https://material-ui.com) &lt;- Most active </li>
+<li>Bootstrap (https://react-bootstrap.github.io)</li>
+<li>Ant Design (https://ant.design) &lt;-- Alibaba</li>
+<li>Semantic UI (https://react.semantic-ui.com)</li>
+</ul>
+
+<h2 id="toc_14">SPA (Single Page App) vs MPA (Multi Page App)</h2>
+
+<ul>
+<li>Multi Page App utilizes &#39;react-router-dom&#39; </li>
+<li>SPA for a very small appliation, but most of our application should need to be MPA.</li>
+<li>&quot;react router&quot; is the most popular library for router to implement MPA.
+https://reacttraining.com/react-router/web/guides/quick-start</li>
+</ul>
+
+<h2 id="toc_15">Dockerize</h2>
+
+<ul>
+<li>Multi-stage (mostly two stages) build is common to reduce build time.</li>
+<li>Create build-stage for build image </li>
+<li>Cache build image</li>
+<li>Create docker with Nginx</li>
+<li>Move build image to Nginx static folder</li>
+<li>Remove docker from build-stage</li>
+<li>Deploy Docker with Nginx + build image</li>
+</ul>
+
+<div><pre><code class="language-bash">    # note that the following is not multi-stage.
+    # use single stage for brevity.
+    #
+    # build environment
+    FROM node:13.12.0-alpine as build
+    WORKDIR /app
+    ENV PATH /app/node_modules/.bin:$PATH
+    COPY package.json ./
+    COPY package-lock.json ./
+    RUN npm ci --silent
+    RUN npm install react-scripts@3.4.1 -g --silent
+    COPY . ./
+    RUN npm run build
+
+    # production environment
+    FROM nginx:stable-alpine
+    COPY --from=build /app/build /usr/share/nginx/html
+    # new
+    COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+    EXPOSE 80
+    CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</code></pre></div>
+
+<div><pre><code class="language-bash">    # nginx.conf
+    server {
+
+      listen 80;
+
+      location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+        try_files $uri $uri/ /index.html;
+      }
+
+      error_page   500 502 503 504  /50x.html;
+
+      location = /50x.html {
+        root   /usr/share/nginx/html;
+      }
+
+    }</code></pre></div>
+
+<h2 id="toc_16">Webserver</h2>
+
+<ul>
+<li>Performance with Ngnix is significantly better than Apache.</li>
+<li>We can see the pattern of migration from Apache to Nginx or other.</li>
+</ul>
+
+<p><img src="img/webserver_market.png" width="900"></p>
+
+<p><img src="img/nginx_apache_share.png" alt="">
+https://www.netcraft.com</p>
+
+<ul>
+<li>Aforementioned Nginx is de facto for building modern web application.</li>
+<li>Two flavors of Nginx,  Nginx or NginxPlus</li>
+<li>Nginx is open source (free)</li>
+<li>NginxPlus is commercial with addition of advanced service on top of Nginx, https://www.nginx.com/products/nginx/#compare-versions</li>
+</ul>
+
+<p><img src='img/nginx-basics.jpg' width='900'></p>
+
+<p>https://www.nginx.org</p>
+
+<h2 id="toc_17">OAuth2/OIDC</h2>
+
+<ul>
+<li>OIDC connection from NginxPlus ($2500/year per instance) -&gt; not free</li>
+<li>OpenResty OIDC - OpenResty is a superset of Nginx, but bundled with LuaJIT scripting language.($0) -&gt; free<br></li>
+<li>https://github.com/zmartzone/lua-resty-openidc</li>
+<li>https://developers.redhat.com/blog/2018/10/08/configuring-nginx-keycloak-oauth-oidc/</li>
+<li>For testing environment, RedHat Keycloak acts as an authorization server in OAuth-based SSO. https://www.keycloak.org/</li>
+<li>docker-compose file for Keycloak is in this repo.</li>
+</ul>
+
+<h2 id="toc_18">DEMO</h2>
+
+<ul>
+<li>JSON Sever - local API endpoint</li>
+<li>Using CRA to create a new application
+I React Hooks</li>
+<li>API calls to JSON server</li>
+<li>DOM update</li>
+<li>OIDC demo with Keycloak (TBD)</li>
+</ul>
+
+
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>

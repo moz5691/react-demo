@@ -139,12 +139,87 @@ const Person = () => {
 }
 export default Person;
 ```
-  
-## Scafolding, building, deploying
+- Pass props to child DOM.  
 
+![](img/props_down.png)
+
+- Event bubbling.
+
+![](img/event_bubble.png)
+
+- Props are from parent node (DOM), child cannot update props.  Only Parent node can update its own props.
+- Imagine water flows downward.  Bubbles move upward. 
+  * (1) Child node send event to direct parent node with requesting change props.  
+  * (2) Parent node takes event and update props.  
+  * (3) Updated props propagates to child DOM. 
+
+
+
+![](img/event_handle.png)
+
+- This props propagation and event handling is relatively easy for small projects, but it quicly becomes very complicated.  
+- We do have solutions for it.
+  * Redux
+  * Context Manager
+  * Reducer and Context Manager with React Hooks 
+
+---
 ### If you use CRA, CRA creates standard scafolding for React project.  
 
 ### If you don't use CRA, folder structure is totally up to you (choose whatever you think it is the best.)
+  
+## Scafolding, building, deploying
+
+
+### React Router
+- Navigational components
+- Server side HTML rendering can be done via multiple different ways. 
+  * Flask with Jinja template   
+  * ExpressJS with HTML template (such as with Handlebar)
+  * Server functionalitis (API endpoint, DB ORM) can be integrated within the same server for small scale server application.
+  * SPA (Single Page Application) or MPA (Multi Page Application)
+- React Router is frontend side rendering
+  * React-Router is declarative.  
+  * Router tells which part of application(DOMs) can be displayed.  SPA but it looks like MPA.
+  * Routing and rendering is strictly within frontend not being dictated by server side (React also support server side rendering but it is out of scope here.)
+  * The backend server is completely out of scope of React-Router.  
+
+### React Router basic components (partial)
+- ```<BrowserRouter></BrowserRouter>``` 
+  To keep UI in sync with the URL
+- ```<Link></Link>```
+  Declarative navigation 
+- ```<Route></Route>```
+  Key component, render matching UI when the path matches the current URL 
+- ```<Switch></Switch>```
+
+```javascript
+    <BrowserRouter>
+      // navigation bar
+      <ul>
+        <li> <Link to="/">Home</Link>               </li>
+        <li> <Link to="/about">About</Link>         </li>
+        <li> <Link to="/dashboard">DashBoard</Link> </li>
+      </ul>
+
+      // path and routing component 
+      <Switch>
+        <Route exact path='/'> <Home /> </Route>
+        <Route path='/about'> <About /> </Route>
+        <Route path='/dashboard'> <DashBoard /> </Route>
+        <Route path='/device/:id'> <Device /> </Route>
+      </Switch>
+
+    </BrowserRouter>
+
+```
+
+### React Router hooks (partial)
+- useParams()
+  * Returns key/value pairs of URL parameters
+- useHistory()
+  * Access to `history` instance to navigate
+
 
 
 ### With Webpack
