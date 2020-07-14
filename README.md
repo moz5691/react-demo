@@ -258,14 +258,27 @@ $ npx create-react-app helloworld
 - Navigational components
 - Server side HTML rendering can be done via multiple different ways. 
   * Flask with Jinja template   
-  * ExpressJS with HTML template (such as with Handlebar.js https://handlebarsjs.com)
+  * ExpressJS (https://expressjs.com) with HTML template engines(https://github.com/expressjs/express/wiki#template-engines)
   * Server functionalities (API endpoints, DB ORM) can be integrated within the same server for small scale server application.
   * SPA (Single Page Application) or MPA (Multi Page Application)
 - React Router is frontend side rendering
   * React-Router is declarative.  
-  * Router tells which part of application(DOMs) can be displayed.  It is stll SPA but acts like MPA.
-  * Routing and rendering is strictly within frontend not being dictated by server side (React also support server side rendering but it is out of scope here.)
-  * The backend server is completely out of scope of React-Router.  
+  * Router tells which part of application(DOMs) can be displayed.  It is stll SPA but works like MPA.
+  * Routing and rendering is strictly within frontend not being dictated by server side
+  * React also supports server side rendering which is mostly for mobile application to reduce the initial loading time (due to initial downloading.)
+  * The backend server for API endpoints is completely out of scope for React-Router.  
+
+### React Router (this is HTML!!!)
+Three travel mates works for React Router
+- match : information about how a `<Route path>` matched URL.
+- location : information about where the app is now, where the app was, where it will go.
+- history : allows to mange and handle browser history
+
+<img src="img/history_location_match.png" width=600 height=200>
+
+
+
+https://www.freecodecamp.org/news/hitchhikers-guide-to-react-router-v4-4b12e369d10/
 
 ### React Router basic components (partial)
 - ```<BrowserRouter></BrowserRouter>``` 
