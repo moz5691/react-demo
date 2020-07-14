@@ -306,7 +306,7 @@ $ npx create-react-app helloworld
   * Access to `history` instance to navigate
 
 ### Demo 
-- Breif demo to show how simple routing works. 
+- Short demo to show how simple routing works. 
 
 ![](img/react_routing_demo.png)
 
