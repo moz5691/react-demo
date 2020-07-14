@@ -268,12 +268,13 @@ $ npx create-react-app helloworld
   * React also supports server side rendering which is mostly for mobile application to reduce the initial loading time (due to initial downloading.)
   * The backend server for API endpoints is completely out of scope for React-Router.  
 
-### React Router (this is HTML!!!)
+### React Router ( Tighltly coupled with Browser !!!)
 Three travel mates works for React Router
 - match : information about how a `<Route path>` matched URL.
 - location : information about where the app is now, where the app was, where it will go.
 - history : allows to mange and handle browser history
 - https://reacttraining.com/react-router/web/guides/quick-start
+- https://www.freecodecamp.org/news/hitchhikers-guide-to-react-router-v4-4b12e369d10/
 
 <img src="img/history_location_match.png" width=600 height=200>
 
