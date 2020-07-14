@@ -273,6 +273,7 @@ Three travel mates works for React Router
 - match : information about how a `<Route path>` matched URL.
 - location : information about where the app is now, where the app was, where it will go.
 - history : allows to mange and handle browser history
+- https://reacttraining.com/react-router/web/guides/quick-start
 
 <img src="img/history_location_match.png" width=600 height=200>
 
@@ -336,13 +337,6 @@ https://www.cypress.io/
 * Bootstrap (https://react-bootstrap.github.io)
 * Ant Design (https://ant.design) <-- Alibaba
 * Semantic UI (https://react.semantic-ui.com)
-
-
-## SPA (Single Page App) vs MPA (Multi Page App)
-* Multi Page App utilizes 'react-router-dom' 
-* SPA for a very small appliation, but most of our application should need to be MPA.
-* "react router" is the most popular library for router to implement MPA.
-https://reacttraining.com/react-router/web/guides/quick-start
 
 
 ## Dockerize
